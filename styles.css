@@ -1,0 +1,103 @@
+body {
+    font-family: "JetBrainsMono", monospace;
+    background-color: #ffffff;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+#LicniPodaci {
+    text-align: center;
+    margin: 20px;
+}
+
+#ProfilnaSlika {
+    border-radius: 15%;
+    margin: 20px auto;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('fonts/webfonts/JetBrainsMono-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+.footer-content a {
+    color: #64b5f6;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #2196f3;
+}
+
+
+.logo-inline {
+    width: 32px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.box_content {
+    text-align: left;
+}
+
+.box {
+
+    text-align: left;
+
+    background-color: #DDDDDD;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+[class^="col-"] {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 12 kolona sistem - širine u procentima */
+.col-1  { width: 8.33%;  }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%;    }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%;    }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%;    }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%;   }
+
+
+@media (max-width: 768px) {
+    .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+    }
+
+    .col-3, .col-4, .col-5 {
+        width: 50%;
+    }
+
+    .col-1, .col-2 {
+        width: 25%;
+    }
+}
