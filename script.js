@@ -1,13 +1,18 @@
 
-let container = document.getElementById("container");
-let HiCount = 0;
+const birthday = new Date(2010, 5, 24);
 
-function SayHI() {
-    for (let i = 0; i < 10; i++) {
-        container.innerHTML += "<p class=\"hi\">HI</p>";
-        HiCount++;
-        if (HiCount >= 10) {
-            container.innerHTML.split("\n")[1] = "";
-        }
+
+let age = document.getElementById("Age");
+let date = new Date();
+
+window.onload = function () {
+    let ageNum = date.getFullYear() - birthday.getFullYear();
+    
+    // Provera da li je rođendan već prošao ove godine
+    const m = date.getMonth() - birthday.getMonth();
+    if (m < 0 || (m === 0 && date.getDate() < birthday.getDate())) {
+        ageNum--;
     }
+
+    age.innerHTML = ageNum;
 }
